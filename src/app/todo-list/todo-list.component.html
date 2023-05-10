@@ -1,0 +1,17 @@
+<div>
+  <form>
+    <label>
+      Add Item:
+      <input type="text" [(ngModel)]="newItem">
+    </label>
+    <button type="button" (click)="addItem(newItem)">Add</button>
+  </form>
+  <ul>
+    <li *ngFor="let item of todoList; let i = index">{{item}}<button type="button" (click)="removeItem(i)">X</button></li>
+  </ul>
+</div>
+
+
+
+
+
